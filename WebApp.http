@@ -13,3 +13,21 @@ Content-Type: application/json
 GET {{WebApp_HostAddress}}/todoitems
 
 ###
+
+GET {{WebApp_HostAddress}}/todoitems/1
+
+###
+
+PUT {{WebApp_HostAddress}}/todoitems/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "task":"walk dog",
+  "isCompleted":false
+}
+###
+
+DELETE {{WebApp_HostAddress}}/todoitems/1
+
+###
